@@ -39,14 +39,12 @@ namespace PlaneAPP
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.emailDaftar = new System.Windows.Forms.TextBox();
-            this.passwordDaftar = new System.Windows.Forms.TextBox();
-            this.nameDaftar = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.hpLabel = new System.Windows.Forms.Label();
-            this.hpDaftar = new System.Windows.Forms.TextBox();
+            this.nameDaftar = new System.Windows.Forms.TextBox();
+            this.passwordDaftar = new System.Windows.Forms.TextBox();
+            this.emailDaftar = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -108,8 +106,6 @@ namespace PlaneAPP
             // tabPage2
             // 
             resources.ApplyResources(this.tabPage2, "tabPage2");
-            this.tabPage2.Controls.Add(this.hpDaftar);
-            this.tabPage2.Controls.Add(this.hpLabel);
             this.tabPage2.Controls.Add(this.label3);
             this.tabPage2.Controls.Add(this.nameDaftar);
             this.tabPage2.Controls.Add(this.passwordDaftar);
@@ -120,45 +116,35 @@ namespace PlaneAPP
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // label1
+            // label3
             // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.Name = "label1";
-            // 
-            // label2
-            // 
-            resources.ApplyResources(this.label2, "label2");
-            this.label2.Name = "label2";
-            // 
-            // emailDaftar
-            // 
-            resources.ApplyResources(this.emailDaftar, "emailDaftar");
-            this.emailDaftar.Name = "emailDaftar";
-            // 
-            // passwordDaftar
-            // 
-            resources.ApplyResources(this.passwordDaftar, "passwordDaftar");
-            this.passwordDaftar.Name = "passwordDaftar";
+            resources.ApplyResources(this.label3, "label3");
+            this.label3.Name = "label3";
             // 
             // nameDaftar
             // 
             resources.ApplyResources(this.nameDaftar, "nameDaftar");
             this.nameDaftar.Name = "nameDaftar";
             // 
-            // label3
+            // passwordDaftar
             // 
-            resources.ApplyResources(this.label3, "label3");
-            this.label3.Name = "label3";
+            resources.ApplyResources(this.passwordDaftar, "passwordDaftar");
+            this.passwordDaftar.Name = "passwordDaftar";
             // 
-            // hpLabel
+            // emailDaftar
             // 
-            resources.ApplyResources(this.hpLabel, "hpLabel");
-            this.hpLabel.Name = "hpLabel";
+            resources.ApplyResources(this.emailDaftar, "emailDaftar");
+            this.emailDaftar.Name = "emailDaftar";
             // 
-            // hpDaftar
+            // label2
             // 
-            resources.ApplyResources(this.hpDaftar, "hpDaftar");
-            this.hpDaftar.Name = "hpDaftar";
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.Name = "label2";
+            // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.Name = "label1";
             // 
             // Auth
             // 
@@ -195,7 +181,5 @@ namespace PlaneAPP
         private System.Windows.Forms.TextBox emailDaftar;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label hpLabel;
-        private System.Windows.Forms.TextBox hpDaftar;
     }
 }

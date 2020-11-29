@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="schedule" targetNamespace="http://tempuri.org/schedule1.xsd" xmlns:mstns="http://tempuri.org/schedule1.xsd" xmlns="http://tempuri.org/schedule1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="plane_appConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="plane_appConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.PlaneAPP.Properties.Settings.GlobalReference.Default.plane_appConnectionString" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="schedule_planeTableAdapter" GeneratorDataComponentClassName="schedule_planeTableAdapter" Name="schedule_plane" UserDataComponentName="schedule_planeTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="plane_appConnectionString (Settings)" DbObjectName="plane_app.schedule_plane" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `maskapai`, `flight`, `asal`, `tujuan`, `price`, `capacity` FROM `schedule_plane`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="maskapai" DataSetColumn="maskapai" />
+              <Mapping SourceColumn="flight" DataSetColumn="flight" />
+              <Mapping SourceColumn="asal" DataSetColumn="asal" />
+              <Mapping SourceColumn="tujuan" DataSetColumn="tujuan" />
+              <Mapping SourceColumn="price" DataSetColumn="price" />
+              <Mapping SourceColumn="capacity" DataSetColumn="capacity" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="schedule" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="schedule" msprop:Generator_UserDSName="schedule">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="schedule_plane" msprop:Generator_TableClassName="schedule_planeDataTable" msprop:Generator_TableVarName="tableschedule_plane" msprop:Generator_TablePropName="schedule_plane" msprop:Generator_RowDeletingName="schedule_planeRowDeleting" msprop:Generator_RowChangingName="schedule_planeRowChanging" msprop:Generator_RowEvHandlerName="schedule_planeRowChangeEventHandler" msprop:Generator_RowDeletedName="schedule_planeRowDeleted" msprop:Generator_UserTableName="schedule_plane" msprop:Generator_RowChangedName="schedule_planeRowChanged" msprop:Generator_RowEvArgName="schedule_planeRowChangeEvent" msprop:Generator_RowClassName="schedule_planeRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="maskapai" msprop:Generator_ColumnVarNameInTable="columnmaskapai" msprop:Generator_ColumnPropNameInRow="maskapai" msprop:Generator_ColumnPropNameInTable="maskapaiColumn" msprop:Generator_UserColumnName="maskapai">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="flight" msprop:Generator_ColumnVarNameInTable="columnflight" msprop:Generator_ColumnPropNameInRow="flight" msprop:Generator_ColumnPropNameInTable="flightColumn" msprop:Generator_UserColumnName="flight" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="asal" msprop:Generator_ColumnVarNameInTable="columnasal" msprop:Generator_ColumnPropNameInRow="asal" msprop:Generator_ColumnPropNameInTable="asalColumn" msprop:Generator_UserColumnName="asal">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="tujuan" msprop:Generator_ColumnVarNameInTable="columntujuan" msprop:Generator_ColumnPropNameInRow="tujuan" msprop:Generator_ColumnPropNameInTable="tujuanColumn" msprop:Generator_UserColumnName="tujuan">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="price" msprop:Generator_ColumnVarNameInTable="columnprice" msprop:Generator_ColumnPropNameInRow="price" msprop:Generator_ColumnPropNameInTable="priceColumn" msprop:Generator_UserColumnName="price" type="xs:int" />
+              <xs:element name="capacity" msprop:Generator_ColumnVarNameInTable="columncapacity" msprop:Generator_ColumnPropNameInRow="capacity" msprop:Generator_ColumnPropNameInTable="capacityColumn" msprop:Generator_UserColumnName="capacity" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

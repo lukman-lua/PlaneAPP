@@ -37,6 +37,7 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Messaging" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -60,13 +61,25 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="PlaneAPPDataSet.Designer.cs">
+    <Compile Include="plane_appDataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>PlaneAPPDataSet.xsd</DependentUpon>
+      <DependentUpon>plane_appDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="plane_appDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>plane_appDataSet11.xsd</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="schedule.cs">
+      <DependentUpon>schedule.xsd</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="schedule.Designer.cs">
+      <DependentUpon>schedule.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Auth.id.resx">
       <DependentUpon>Auth.cs</DependentUpon>
     </EmbeddedResource>
@@ -85,16 +98,30 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="PlaneAPPDataSet.xsc">
-      <DependentUpon>PlaneAPPDataSet.xsd</DependentUpon>
+    <EmbeddedResource Include="schedule.resx">
+      <DependentUpon>schedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="plane_appDataSet1.xsc">
+      <DependentUpon>plane_appDataSet1.xsd</DependentUpon>
     </None>
-    <None Include="PlaneAPPDataSet.xsd">
+    <None Include="plane_appDataSet1.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>PlaneAPPDataSet.Designer.cs</LastGenOutput>
+      <LastGenOutput>plane_appDataSet1.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="PlaneAPPDataSet.xss">
-      <DependentUpon>PlaneAPPDataSet.xsd</DependentUpon>
+    <None Include="plane_appDataSet1.xss">
+      <DependentUpon>plane_appDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="plane_appDataSet11.xsc">
+      <DependentUpon>plane_appDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="plane_appDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>plane_appDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="plane_appDataSet11.xss">
+      <DependentUpon>plane_appDataSet11.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

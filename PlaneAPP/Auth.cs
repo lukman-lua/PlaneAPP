@@ -13,7 +13,7 @@ namespace PlaneAPP
 {
     public partial class Auth : Form
     {
-        MySqlConnection conn = new MySqlConnection("server=localhost;port=3306;uid=root;pwd=lukman122002;database=PlaneAPP;");
+        MySqlConnection conn = new MySqlConnection("server=localhost;port=3306;uid=root;pwd=lukman122002;database=plane_app;");
         MySqlCommand command;
         MySqlDataReader reader;
         public Auth()
@@ -52,16 +52,14 @@ namespace PlaneAPP
             var named = nameDaftar.Text;
             var emaild = emailDaftar.Text;
             var paswordd = passwordDaftar.Text;
-            var hp = hpDaftar.Text;
-            if (named.Length > 7 && emaild.Contains("@gmail") && paswordd.Length > 7 && hp.Length > 12 )
+            if (named.Length > 7 && emaild.Contains("@gmail") && paswordd.Length > 7)
             {
                 conn.Open();
-                String query = "INSERT INTO user (name,email,password,no_hp)" +
+                String query = "INSERT INTO user (name,email,password)" +
                 "VALUES (" +
                 "'" + named + "'," +
                 "'" + emaild + "'," +
-                "'" + paswordd + "'," +
-                "'" + hp + "');";
+                "'" + paswordd + "');";
                 command = new MySqlCommand(query, conn);
                 reader = command.ExecuteReader();
                 if (reader.Read())

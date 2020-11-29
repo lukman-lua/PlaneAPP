@@ -33,5 +33,16 @@ namespace PlaneAPP.Properties {
                 return ((string)(this["PlaneAPPConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("server=localhost;user id=root;password=lukman122002;persistsecurityinfo=True;data" +
+            "base=plane_app")]
+        public string plane_appConnectionString {
+            get {
+                return ((string)(this["plane_appConnectionString"]));
+            }
+        }
     }
 }
